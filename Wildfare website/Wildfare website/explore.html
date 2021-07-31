@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: -webkit-linear-gradient(to right, #dd2476, #ff512f);
+      background: linear-gradient(to right, #dd2476, #ff512f);
+        }
+        h1{
+            position: relative;
+            font-size: 20px;
+            font-family: 'Courier New', Courier, monospace;
+-webkit-background-clip: texts;
+
+        }
+        .slider {
+    position: relative;
+    width: 60%;
+    overflow: hidden;
+}
+.images {
+    display: flex;
+    width: 100%;
+}
+.images img {
+    height: 400px;
+    width: 100%;
+    transition: all 0.15s ease;
+}
+.images input {
+    display: none;
+}
+.dots {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+.dots label {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: solid #fff 3px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    margin: 5px;
+}
+.dots label:hover {background: #fff;}
+#img1:checked ~ .m1 {
+    margin-left: 0;
+}
+#img2:checked ~ .m2 {
+    margin-left: -100%;
+}
+#img3:checked ~ .m3 {
+    margin-left: -200%;
+}
+#img4:checked ~ .m4 {
+    margin-left: -300%;
+}
+    </style>
+</head>
+<body>
+    <h1>
+ <u>  Hemis National Park </u>
+    </h1> 
+    <h4 style="color:violet">This park is located in the Ladakh region is one of the most favorite tourist and trekking spots in Ladakh for a variety of reasons. Established in 1981, this park is also known as Hemis high altitude national park of India.<br>
+
+It got its name after the famous monastery of Ladakh i.e the Hemis Gompa Monastery. With the Indus and Zanskar Rivers flowing at its frontiers, the exotic landscape and un-spoilt surroundings, this park has become popular for being one of the most picturesque national parks to visit in India.<br>
+
+From visiting Tibetan settlements to photographing nature and witnessing rare animals to indulging in adventures, you can choose to do a lot of things in Hemis National Park. This Park is a photographers delight, so before planning a visit to this place, try to brush up your photography skills or get a new camera for sure. In case you are all prepped up to visit this Indian National Park, here are all the details for you.
+</h4>
+<div class="slider">
+    <div class="images">
+        <input type="radio" name="slide" id="img1" checked>
+        <input type="radio" name="slide" id="img2">
+        <input type="radio" name="slide" id="img3">
+        <input type="radio" name="slide" id="img4">
+
+        <img src="1024px-StokKangripiccrop.jpg" class="m1" alt="img1">
+        <img src="hemis-national-park.jpg" class="m2" alt="img2">
+        <img src="wildlife-tourism3.jpg" class="m3" alt="img3">
+        <img src="flora-hemis-tourism1.jpg" class="m4" alt="img4">
+    </div>
+    <div class="dots">
+        <label for="img1"></label>
+        <label for="img2"></label>
+        <label for="img3"></label>
+        <label for="img4"></label>
+    </div>
+</div>
+
+</body>
+</html>
